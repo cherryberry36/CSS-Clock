@@ -1,0 +1,78 @@
+body{
+    background-color:linear-gradient(to right  hsl(244, 71%, 58%), hsl(200, 50%, 50%));
+}
+#container{
+    height:560px;
+    width: 560px;
+    background-color: #d1d9df;
+    border-radius: 50%;
+    display:flex;
+    border: 5px solid rgb(2, 34, 2);
+    position: absolute;
+    margin-left: 120px;
+}
+#hour{
+    position: relative;
+    width: 8px;
+    height: 120px;
+    background-color: black;
+    margin-left: 280px;
+    margin-top: 180px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    animation: rotate 43200s infinite linear;
+  }
+
+  #minutes{
+    width: 8px;
+    height: 190px;
+    background-color: rgb(78, 68, 68);
+    margin-top: 110px;
+    margin-left: -8px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    animation: rotate 3600s infinite linear;
+  }
+  #second{
+    width: 6px;
+    height: 240px;
+    background-color: rgb(231, 60, 60);
+    margin-left: -13px;
+    margin-top: 60px;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+    animation: rotate 60s infinite linear;
+  }
+
+  @keyframes rotate {
+    0% {
+      transform: rotate(0);
+      transform-origin: center bottom;
+    }
+  
+    100% {
+      transform: rotate(360deg);
+      transform-origin: center bottom;
+    }
+  }
+  .number{
+      position:relative;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-weight: bold;
+      font-size: 40px;
+      font-style: italic;
+  }
+  
+#three{
+    transform:rotate(90deg);
+}
+#six{
+    transform: rotate(180deg);
+    padding-left: 10px;
+}
+#nine{
+    transform:rotate(270deg);
+}
+#twelve{
+    transform:rotate(340deg);
+}
