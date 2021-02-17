@@ -9,7 +9,21 @@ body{
     display:flex;
     border: 5px solid rgb(2, 34, 2);
     position: absolute;
-    margin-left: 120px;
+    margin-left: 20px;
+    background-image: url(love.jpg);
+}
+p{
+  text-align: right;
+  margin-right: 120px;
+  font-size: 30px;
+  font-style: italic;
+  font-family: 'Dancing Script', cursive;
+  color: rgb(46, 21, 21);
+  transform: rotate(30deg);
+}
+img{
+  height: 100px;
+  width: 100px;
 }
 #hour{
     position: relative;
@@ -55,24 +69,4 @@ body{
       transform-origin: center bottom;
     }
   }
-  .number{
-      position:relative;
-      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-      font-weight: bold;
-      font-size: 40px;
-      font-style: italic;
-  }
   
-#three{
-    transform:rotate(90deg);
-}
-#six{
-    transform: rotate(180deg);
-    padding-left: 10px;
-}
-#nine{
-    transform:rotate(270deg);
-}
-#twelve{
-    transform:rotate(340deg);
-}
